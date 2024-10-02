@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.runoob.com/html/html-tutorial.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>经典软件体系结构</title>
+
+  <meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="http://www.runoob.com/html/html-tutorial.html">
+
+	<link rel="shortcut icon" src="./img/mp.png">
+
+  <!--[if gte IE 9]><!-->
+
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+     <script src="https://cdn.staticfile.org/jquery/1.9.1/jquery.min.js"></script>
+     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+<!--  <link rel="apple-touch-icon" href="https://static.runoob.com/images/icon/mobile-icon.png">-->
+
+<meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><link rel="stylesheet" type="text/css" href="./HTML 教程 _ 菜鸟教程_files/atelier-savanna-light.min.css"><script async="" src="https://fundingchoicesmessages.google.com/i/ca-pub-5751451760833794?ers=2"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body style="">
+
+<!--  头部 -->
+<div class="container logo-search">
+
+</div>
+
+
+<!--  内容  -->
+<div class="container main" style="height: auto !important;">
+	<!-- 中间 -->
+	<div class="row" style="height: auto !important;">
+	
+<div class="runoob-col-md2">
+<div class="left-column site-fix" style="width: 222px;">
+	<div class="tab" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+		<a data-cate="1" href="javascript:void(0);" title="夜间模式" id="moon"></a>
+	<a data-cate="1" style="display:none;" href="javascript:void(0);" title="日间模式" id="sun"><i class="fa fa-sun-o" aria-hidden="true" style="line-height: 28px;font-size: 1.2em;margin: 2px 4px 0;line-height: 28px;
+}"></i></a>
+
+	</div>
+	<div class="sidebar-box gallery-list">
+		<div class="design" id="leftcolumn">
+						<a target="_top" data-p="par" href="index.html">
+			主程序-子程序			</a><br>
+						<a target="_top" data-p="par"  href="oo.html">
+			面向对象			</a><br>
+						<a target="_top" data-p="par"  href="event.html">
+			事件系统			</a><br>
+						<a target="_top" data-p="par"  href="pipe.html">
+			管道-过滤			</a>
+
+		</div>
+	</div>	
+</div>
+</div>	<div class="col middle-column" style="height: auto !important;">
+		
+	
+	<div class="article" style="height: auto !important;">
+		
+
+<div class="article-heading-ad" style="display: block;">
+<script async=""  crossorigin="anonymous" data-checked-head="true"></script>
+<!-- 728*90 固定 -->
+
+		</div>
+		<div class="article-body">
+		
+			<div class="article-intro" id="content">
+			
+			<h1> <span class="color_h1">主程序-子程序</span></h1>
+<div class="tutintro">
+<!--	这个img是html图标位置-->
+<img decoding="async" src="./img/mp.png">
+<p>主程序-子程序软件体系结构是一种常见的软件设计架构
+<p>用于将复杂的软件系统分解为主程序和多个子程序（或称为模块、组件）来实现功能的划分和组织。这种体系结构有助于提高软件的可维护性、可扩展性和代码重用性。</p>
+
+</div>
+
+<blockquote>  <p>
+	在主程序-子程序软件体系结构中，主程序是整个系统的核心，负责协调和控制各个子程序的执行。主程序通常包含系统初始化、用户界面、数据管理、错误处理等通用功能。它可以看作是一个框架或容器，提供整体的系统结构和基础设施。
+
+	而子程序则是主程序的组成部分，每个子程序负责实现系统中的特定功能或任务。子程序之间可以通过定义良好的接口进行通信和交互。这种分解将复杂的系统逻辑划分为相对独立的模块，使得每个子程序的设计和实现更加简单和可控。
+	</p>
+</blockquote>
+
+				<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+
+<div class="example" id="input-output" >
+
+
+	<h2 class="example">尝试：</h2>
+
+	<div class="search-input"  >
+		<label for="output">输入</label>
+		<input class="placeholder" id="s" name="s" v-model="inputText"
+			   placeholder="输入" onclick="sendGetRequest()" autocomplete="off" style="height: 44px;">
+	</div>
+	<br>
+	<button  @click="sendGetRequest" class="tryitbtn" rel="noopener noreferrer">提交 »</button>
+	<br>
+	<div class="example_code">
+<span class="hl-brackets">
+  <label for="output">输出</label>
+  <textarea id="output" rows="4" cols="50">{{ outputText }}</textarea>
+</span>
+	<script>
+		new Vue({
+			el: '#input-output',
+			data: {
+				inputText: '',
+				outputText: ''
+			},
+			methods: {
+				sendGetRequest() {
+					// 发送 GET 请求
+					// 这里可以使用你喜欢的方式发送 GET 请求，比如使用 Axios、fetch 等
+					// 下面是一个示例使用 Axios 发送 GET 请求的代码
+					axios.get('/main-program', {
+						params: {
+							input: this.inputText
+						}
+					})
+							.then(response => {
+								// 请求成功后更新 outputText
+								this.outputText = response.data;
+								console.log(response);
+							})
+							.catch(error => {
+								// 请求失败时处理错误
+								console.error(error);
+							});
+				}
+			}
+		});
+	</script>
+
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+function isBlank(str) {
+    return (!str || /^\s*$/.test(str));
+}
+function kFormatter(num) {
+	// return num;
+    return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
+}
+
+</script>
+
+		<div class="sidebar-box ">
+				
+
+<style>	
+.responsive_ad1 { display:none; }
+@media(min-width: 800px) { .responsive_ad1 {  display:block;margin:0 auto;} }
+</style>
+<div id="ad-336280">
+
+<script async="" src="./HTML 教程 _ 菜鸟教程_files/f(8).txt" crossorigin="anonymous" data-checked-head="true"></script>
+<!-- 移动版 自动调整 -->
+
+<!-- 右边栏 -->
+<div class="fivecol last right-column" style="height: auto !important;">
+
+<style>
+.sidebar-tree .double-li {
+    width:300px;
+}
+.sidebar-tree .double-li li {
+    width: 44%;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    display: inline;
+}
+</style>
+
+    <br>
+
+
+<script>
+var aid = 1;
+function coll() {
+	$.post( '/wp-content/themes/runoob/option/user/userinfo.php', {aid:aid, action:"collarticle", opt:'add'},function( data ) {
+		if(data.error==0) {
+			$("#content").find("h1:first").find("a").attr("href","javascript:void(0);");
+			$("#content").find("h1:first").find("img").attr("src","http://www.runoob.com/wp-content/themes/runoob/assets/img/coll2.png").css({width:32+"px",height:32+"px"});
+		}
+		alert(data.msg);
+	},'json');
+}
+</script>
+
+
+<script async="" src="./HTML 教程 _ 菜鸟教程_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84264393-2');
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3eec0b7da6548cf07db3bc477ea905ee";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+
+<script>
+window.jsui={
+    www: 'https://www.runoob.com',
+    uri: 'https://www.runoob.com/wp-content/themes/runoob'
+};
+</script>
+
+<script src="./HTML 教程 _ 菜鸟教程_files/clipboard.js.下载"></script>
+
+<script src="./HTML 教程 _ 菜鸟教程_files/main.min.js.下载"></script>
